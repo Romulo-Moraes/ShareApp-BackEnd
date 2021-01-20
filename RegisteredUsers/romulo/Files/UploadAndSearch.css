@@ -1,0 +1,368 @@
+#MainPagePlace{
+    position: absolute;
+    display: grid;
+    grid-template-rows: 15vh 50vh 35vh;
+    grid-template-columns: 10vw 60vw 30vw;
+    grid-template-areas:"Header Header Header"
+                        "SideBar Background Background"
+                        "SideBar TheButtons TheButtons"
+}
+#UploadFormPlace{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#UploadFormTitle{
+    grid-area: UploadFormTitle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5vw;
+    border-top-right-radius: 12px;
+    border: 2px solid black;
+    border-top-left-radius: 12px;
+
+}
+.ActionButtonOfUploadForm{
+    padding: 5%;
+    font-size: 1.6vw;
+    border-radius: 8px;
+}
+.UploadButton{
+    width: auto;
+    border: 2px solid silver;
+    border-radius: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: goldman;
+    font-size: 1.5vw;
+    height: auto;
+    min-height: 80px;
+    cursor: pointer;
+}
+#DisplayMode{
+    grid-area: DisplayMode;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    border: 2px solid black;
+}
+.UploadButton:hover {
+    transition: 1s;
+    background-color: blue;
+    color: white;
+}
+#TheFile{
+    display: none;
+}
+#SelectDisplayModePlace{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+}
+#BlackScreen{
+    background-color: black;
+    z-index: 10;
+    opacity: 0.8;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#Selector{
+    width: 100%;
+    padding: 5%;
+    border-radius: 12px;
+    font-family: goldman;
+    font-size: 1.5vw;
+}
+.DisplayModeOptions{
+    position: relative;
+    border:2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+#TheBlackScreen{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    z-index: 7;
+}
+.ToGoldman{
+    font-family: goldman;
+}
+.Commons{
+    padding: 5%;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 1.2vw;
+    width: 100%;
+    font-family: goldman;
+}
+#SelectDisplayMode{
+    width: 200px;
+    height: 55%;
+    border: 2px solid black;
+    background-color: silver;
+    position: relative;
+    display: flex;
+    border-radius: 12px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+}
+.ToFileName{
+    text-align: center;
+}
+#SelectFile{
+    grid-area: SelectFile;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    position: relative;
+    align-items: center;
+    
+}
+#UploadForm{
+    min-width: 300px;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns:50% 50%;
+    height: 60%;
+    position: relative;
+    background-color: #810ccf;
+    z-index: 4;
+    border-radius: 12px;
+    grid-template-areas: "UploadFormTitle UploadFormTitle"
+                          "SelectFile DisplayMode"
+                          "TheActionButtonOfUploadForm TheActionButtonOfUploadForm"
+}
+
+
+
+
+#TheActionButtonOfUploadForm{
+    border: 2px solid black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: TheActionButtonOfUploadForm;
+}
+body{
+    overflow: hidden;
+}
+#ForBackgroundImage{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background:linear-gradient(130deg , silver , white, silver,white,silver,white);
+    width: 100%;
+    height:auto;
+
+}
+#Background{
+    grid-area: Background;
+    text-align: center;
+    background: transparent;
+
+    background-repeat: no-repeat;
+
+    font-style: normal;
+    font-size: 2vw;
+    font-family: goldman;
+}
+.ButtonOfSearch{
+    font-size: 1.5vw;
+    min-width: 100px;
+    position: relative;
+    padding: 10%;
+    font-family: goldman;
+    min-height: 50px;
+}
+.ForSearchBar{
+    position: relative;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}
+#User{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    font-family: goldman;
+    background-color: #1774e7;
+    grid-area: User;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 8vw 12vw;
+    grid-template-rows: 15vh;
+    grid-template-areas: "UserPhoto UserName"
+}
+#UserPhoto{
+    grid-area: UserPhoto;
+    background-color: red;
+}
+.FormInputTextForSearch{
+    border: 2px solid silver;
+    font-size: 1.5vw;
+    font-family: goldman;
+    width: 280%;
+    border-top-left-radius: 8px;
+    min-height: 50px;
+    position: relative;
+    border-bottom-left-radius: 8px;
+    padding: 3%;
+}
+#UserName{
+    grid-area: UserName;
+    text-align: center;
+}
+#Header{
+    grid-area: Header;
+    z-index: 2;
+    width: 100vw;
+    background-color: #810ccf;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 15vh;
+    min-height: 100px;
+    grid-template-areas: "SearchBarPlace SearchBarPlace SearchBarPlace";
+}
+.PricipalButtons{
+    border-radius: 12px;
+    cursor: pointer;
+    width: 8vw;
+    height: 8vw;
+
+}
+#SearchBarPlace{
+    grid-area: SearchBarPlace;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 100px;
+}
+#TheButtons{
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: TheButtons;
+}
+#SideBar{
+    grid-area: SideBar;
+    background-color:#810ccf ;
+    z-index: 2;
+    width: 100%;
+}
+@media screen and (max-width:1000px){
+    .PricipalButtons{
+        border-radius: 12px;
+        cursor: pointer;
+        width: 20vw;
+        height: 20vw;
+    }
+    #Header{
+        background-color: cyan;
+        
+    }
+    .FormInputTextForSearch{
+        font-size: 2vw;
+        width: 203%;
+        min-height: 50px;
+    }
+    .ButtonOfSearch{
+        font-size: 3.5vw;
+    }
+    #SideBar{
+        display: none;
+    }
+    #UploadFormTitle{
+       font-size: 3vw;
+    
+    }
+    .ActionButtonOfUploadForm{
+        font-size: 4.5vw;
+    }
+    .UploadButton{
+        font-size: 4vw;
+    }
+    
+}
+
+@media screen and (max-width:658px){
+    .FormInputTextForSearch{
+        font-size: 3vw;
+        width: 143%;
+        min-height: 50px;
+    }
+}
+
+@media screen and (max-height:630px){
+    .PricipalButtons{
+        border-radius: 12px;
+        cursor: pointer;
+        width: 10vw;
+        height: 10vw;
+    }
+}
+@media screen and (max-height:670px){
+    #UploadFormTitle{
+        font-size: 2vw;
+     
+     }
+     .ActionButtonOfUploadForm{
+         font-size: 2.5vw;
+     }
+     .UploadButton{
+         font-size: 1.8vw;
+
+     }
+     #UploadForm{
+        font-size: 1.5vw;
+        min-width: 300px;
+        min-height: 270px;
+        height: auto;
+        width: 40%;
+        display: grid;
+        grid-template-rows: 20% 60% 20%;
+        grid-template-columns:50% 50%;
+        height: 80%;
+        position: relative;
+        background-color: #810ccf;
+        z-index: 4;
+        border-radius: 12px;
+        grid-template-areas: "UploadFormTitle UploadFormTitle"
+                              "SelectFile DisplayMode"
+                              "TheActionButtonOfUploadForm TheActionButtonOfUploadForm"
+    }
+}
